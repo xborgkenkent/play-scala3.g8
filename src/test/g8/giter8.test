@@ -1,0 +1,12 @@
+# This is a sbt scripted test
+
+> compile
+> test
+
+> g8Scaffold form --force --model=user
+
+$exists app/controllers/UserController.scala
+$exists test/controllers/UserControllerSpec.scala
+
+> compile
+> test
